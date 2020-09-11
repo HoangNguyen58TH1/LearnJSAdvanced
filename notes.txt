@@ -43,6 +43,18 @@ Task3: Function context & bind
 - function context: ngữ cảnh của cái function đó
 - bind: methods bind dùng để trói buộc function đó vào 1 cái context gì đó.
 
+- global context thực chất nó là 1 cái biến (variable) thôi --> value của nó phụ thuộc vào môi trường mà mình chạy chương trình.
+- Javascript dùng biến this để mô tả ngữ cảnh.
+- mode thực thi (strict mode hay non-strict mode).
+- Trên browser, this chính là đối tượng window.
+// In web browsers, the window object is also the global object:
 
+- trong strict mode, this sẽ có giá trị undefined
+
+- Thỉnh thoảng ta muốn this trỏ đến 1 context nào đó, đấy là lúc dùng call và apply.
+2 hàm này làm công việc giống hệt nhau, chỉ khác cách truyền tham số cho hàm được gọi. call dùng các biến theo thứ tự truyền vào, apply truyền biến bằng mảng (array)
+
+- All function đều có các method mà lúc nào cũng sử dụng được.
++ bind, call, apply.
 
 
