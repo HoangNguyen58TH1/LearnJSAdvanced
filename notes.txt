@@ -1,3 +1,41 @@
 11/09/2020
 Task1: Hoisting
 - Để  tránh hoisting thì ngta khai báo variable ở đầu function hoặc đầu chương trình.
+
+-----------------------------------------------------------
+Task2: Let, Const
+
+1. Declaration (khai báo)
+A. Khai báo:
+- var thì được khai báo lại
+- let, const thì không được khai báo lại.
+B. Khai báo mà k gán giá trị:
+- var, let có thể khai báo mà không gán gia trị chi nó --> undefined
+- const thì không thể khai báo mà k gán giá trị được.
+
+2. Hoisting
+- var thì có hoisting còn let, const thì không.
+
+3. Block scope
+- let, const thì nó có block scope
+- var thì k có block scope, mà chỉ có function scope thôi. --> var k tuân thủ block scope.
+- block scope là gì: là khi mình khao báo vs: {}
++ VD: if{...}
+      for{...}
+      function{...}
+      Thậm chí là khai báo như vậy luôn vẫn đc coi là 1 block scope: {...} --> k có if hay for gì. --> nhưng mà thực ra nó k đc dùng bao giờ cả.
+      Ngoại trừ khai báo object. {}
+- Như vậy thì function scope nó sẽ thuộc váo block scope.
+
+- Thông thường khi lập trình thì ngta càng muốn giới hạn cái scope của variable càng nhỏ càng tốt. --> Vì như vậy:
++ Dể quản lý scope của biến
++ Scope càng bé thì càng ít tốn bộ nhớ khi chạy chương trình.
+--> Mục đích là để tối ưu chương trình của mình.
+
+*** Túm lại: let và const được tạo ra để thay thể var. Nhằm khắc phục:
+- khai báo lại
+- hoisting
+- block scope --> tiết kiệm bộ nhớ, tối ưu hóa chương trình.
+
+
+
