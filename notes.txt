@@ -37,5 +37,12 @@ B. Khai báo mà k gán giá trị:
 - hoisting
 - block scope --> tiết kiệm bộ nhớ, tối ưu hóa chương trình.
 
+-----------------------------------------------------------
+Task3: Function context & bind
+- global context: ngữ cảnh toàn cục
+- function context: ngữ cảnh của cái function đó
+- bind: methods bind dùng để trói buộc function đó vào 1 cái context gì đó.
+
+
 
 
