@@ -43,6 +43,25 @@ Task3: Function context & bind
 - function context: ngữ cảnh của cái function đó
 - bind: methods bind dùng để trói buộc function đó vào 1 cái context gì đó.
 
+-----------------------------------------------------------
+Task4: Arrow function expression - Fat arrow
+=> ->
+- expression: biểu hiện, sự diễn tả.
 
+- Nếu chỉ có 1 param thì không cần ().
+- còn nếu không có hoặc từ 2 param trở lên thì phải có dấu ngoặc () mới đúng cú pháp.
 
+-----------------------------------------------------------
+Task5: Arrow function expression - part2
+- arrow function thì không có context.
+- function bình thường, không theo kiểu ES6 thì có context.
 
+- Nếu không viết JS theo kiểu ES6 trở lên thì phải bind(object) nó mới nhận context
+- Còn viết theo kiểu ES6 thì arrow function k có context.
+
+- Như vậy là có 3 cách để  dùng lại biến this cho 1 function bên trong 1 function cha.
++ .bind(object)
++ that = this
++ dùng arrow function expression
+
+--- Sư khác biệt giữa arrow function vs function thường ???
