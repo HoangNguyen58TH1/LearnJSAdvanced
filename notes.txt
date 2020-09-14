@@ -65,3 +65,15 @@ Task5: Arrow function expression - part2
 + dùng arrow function expression
 
 --- Sư khác biệt giữa arrow function vs function thường ???
+
+
+-----------------------------------------------------------
+Task6: Template String
+- `${ trong này viết được các biểu thức JS }`
+- Biểu thức JS:
++ tên biến
++ các phép tính cộng trừ nhân chia
++ gọi function
+- Ngoài ra dùng cách template string thì có thể  xuống dòng được.
+- Chèn 1 lần nhiều biểu thức được.
+

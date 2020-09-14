@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+
+    </div>
+</body>
+<!-- <script>
+    let number = [];
+    for(let i = 1; i < 31; i++){
+        number.push(i);
+    }
+    calendarArray = number.map(item => {
+        if(item %7 == 0){
+            return '<span>' + item + ' </span>' + '<br>'
+        }
+        else {
+            return '<span>' + item + ' </span>'
+        }
+    })
+    console.log(calendarArray);
+    console.log(typeof calendarArray);
+    calendarArray =  calendarArray.join(' ');
+    console.log(calendarArray);
+    console.log(typeof calendarArray);
+    document.getElementById('container').innerHTML = calendarArray;
+</script> -->
+<script>
+    let calendarArray = '';
+    for(let i = 1; i < 31; i++){
+        if(i %7 == 0){
+            calendarArray += '<span>' + i + ' </span>' + '<br>'
+        }
+        else {
+            calendarArray += '<span>' + i + ' </span>'
+        }
+    }
+    console.log(calendarArray);
+    console.log(typeof calendarArray);
+    document.getElementById('container').innerHTML = calendarArray;
+</script>
+</html>
