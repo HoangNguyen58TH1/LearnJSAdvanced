@@ -77,3 +77,26 @@ Task6: Template String
 - Ngoài ra dùng cách template string thì có thể  xuống dòng được.
 - Chèn 1 lần nhiều biểu thức được.
 
+-----------------------------------------------------------
+Task7: Arguments
+- tham số
+- đối số
+- tham số mặc định = giá trị đối số mặc định.
+
+- biến arguments nằm trong all function (ngoài trừ arrow function)
+- argunments là 1 object có dang array-like object.
+- array-like object không có các method của array.
+- 1 array-like object là:
+let obj = {
+      1: 'Hoang',
+      2: 'Nguyen',
+      3: 'Van',
+      length: 3
+}
+--> tức là phải có các key như index của array và có property length ở cuối.
+
+- arguments là 1 biến tồn tại bên trong scope của 1 cái function(k phải =>) dưới dạng array-like object.
+- arguments tuy k được khai báo nhưng luôn tồn tại trong scope của 1 function.
+
+- Xử lý khi nhận n đối số  đầu vào --> using arguments --> convert into array --> using reduce || map.
+
