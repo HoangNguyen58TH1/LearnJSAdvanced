@@ -107,3 +107,15 @@ Task8: Default parameters
 Chỉ khi khai báo các kiểu như: string, number, boolean thì mới k bị change.
 
 - Default parameters: tham số mặc định của 1 function.
+
+-----------------------------------------------------------
+Task8: Call
+- bind(object) 
+      --> return 1 function và phải gọi function ấy bằng cách thêm ()
+- call(object, argument1, argument2, ...) 
+- call(this, argument1, argument2, ...) 
+      --> gọi function đấy và (return value) mà (function return).
+- apply(object, [argument1, argument2, ...])
+- apply(this, [argument1, argument2, ...])
+      --> nhận vào a array || array-like object.
+      
