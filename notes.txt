@@ -100,3 +100,10 @@ let obj = {
 
 - Xử lý khi nhận n đối số  đầu vào --> using arguments --> convert into array --> using reduce || map.
 
+-----------------------------------------------------------
+Task8: Default parameters 
+
+- const có 1 cái dở hơi đó là khi khai báo object (cả array cũng vậy) thì nó vấn bị change bình thường. 
+Chỉ khi khai báo các kiểu như: string, number, boolean thì mới k bị change.
+
+- Default parameters: tham số mặc định của 1 function.
