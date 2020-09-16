@@ -118,4 +118,14 @@ Task8: Call
 - apply(object, [argument1, argument2, ...])
 - apply(this, [argument1, argument2, ...])
       --> nhận vào a array || array-like object.
+
+-----------------------------------------------------------
+Task11: Enhanced object literals
+- literal: theo nghĩa đen.
+- object literals: object được khai báo theo kiểu viết tay. --> {}
+
+- materials: nguyên vật liệu
+
+- hàm ẩn danh (closure).
+
       
