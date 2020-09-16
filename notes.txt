@@ -128,4 +128,21 @@ Task11: Enhanced object literals
 
 - hàm ẩn danh (closure).
 
-      
+-----------------------------------------------------------
+Task12: Class
+- Trước khi có class thì trong JS ngta sử dụng OOP bằng constructor function vs prototype
+- constructor: khởi tạo
+- constructor function: hàm khởi tạo
+
+- snake: hoang_nguyen
+- camelCase: hoangNguyen
+- PascalCase: HoangNguyen
+
+- window cho browsers và global cho nodeJS.
+
+- Java là language thuần OOP
+- JS không phải là language lập trình HĐT từ ban đầu (k phải language OOP từ đầu)
+--> Cú pháp Class được sinh ra để  viết Constructor function ngắn gọn hơn.
+--> Giống lagnuage OOP hơn.
+
+
