@@ -121,6 +121,7 @@ Task8: Call
 
 -----------------------------------------------------------
 Task11: Enhanced object literals
+- enhanced: nâng cao
 - literal: theo nghĩa đen.
 - object literals: object được khai báo theo kiểu viết tay. --> {}
 
@@ -155,4 +156,33 @@ Task13: Class Inheritance - Kế  thừa trong class - OOP
 
 -----------------------------------------------------------
 Task14: Method overriding
+
+-----------------------------------------------------------
+Task15: Supper
+- increment: tăng
+- decrement: giảm
+- enemy: kẻ thù
+- incognito: ẩn danh
+
+- ranged attack: tấn công tầm xa.
+- ranged: dọc theo, chạy dài, tầm xa, ...
+
+- subclass: class con
+- baseclass: class cha.
+- super (đc gọi trong subclass) đại diện cho constructor function của baseclass.
+- super là đại diện cho thằng baseclass của class gọi nó.
+
+- trong java hiện tượng overriding chỉ xảy ra khi 2 method trung tên + số lượng param truyền vào
+- trong js thì hiện tượng overriding xảy ra khi 2 method cùng tên.
+
+- notes:
++ super được dùng khi mình muốn giữ lại những cái của baseclass và thêm mới cái gì đó.
++ overriding được dùng khi mình muốn subclass overriding thằng baseclass luôn.
+
+- cú pháp:
+super([arguments]); // gọi hàm khởi tạo cha.
+super.functionOnParent([arguments]);
+
+- polygon: đa giác
+- square: ô vuông
 
