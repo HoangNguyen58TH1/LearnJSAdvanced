@@ -145,4 +145,7 @@ Task12: Class
 --> Cú pháp Class được sinh ra để  viết Constructor function ngắn gọn hơn.
 --> Giống lagnuage OOP hơn.
 
-
+-----------------------------------------------------------
+Task13: Class Inheritance - Kế  thừa trong class - OOP
+- Kế thừa: là 1 đặc điểm trong OOP (lập trình HĐT)
+- parrot: con vẹt
