@@ -149,3 +149,10 @@ Task12: Class
 Task13: Class Inheritance - Kế  thừa trong class - OOP
 - Kế thừa: là 1 đặc điểm trong OOP (lập trình HĐT)
 - parrot: con vẹt
+
+- khi dùng class để kế thừa thì log objetc đó ra thì nó sẽ thuộc class hiện tại
+- Còn đối vs function constructor thì log object ra thì nó sẽ thuộc về  object đầu tiên.
+
+-----------------------------------------------------------
+Task14: Method overriding
+
