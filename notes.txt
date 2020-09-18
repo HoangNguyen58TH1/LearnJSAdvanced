@@ -186,3 +186,25 @@ super.functionOnParent([arguments]);
 - polygon: đa giác
 - square: ô vuông
 
+-----------------------------------------------------------
+Task16: Static
+- using "static" create static method.
+- dùng từ khóa "static" để tạo ra các static method.
+
+- static method ko được gọi từ instance của class đó mà nó chỉ được gọi từ chính class.
+- ngược lại method bình thường thì chỉ đc gọi từ các instance mà k gọi đc từ chính class đó.
+
+- cũng có thể dùng "static" để tạo các biến static chỉ đc truy cập từ class thôi.
+
+--- static method được sử dụng khi nào ?
+--> khi không đòi hỏi phải tạo 1 object mới để có thể sử dụng được function đấy.
+--> mà có thể sử dụng function đó luôn mà k cần phải tạo object.
+
+VD:
+- Array.from(): 
+--> method bình thường.
+
+- Array.prototype.concat()
+- Array.prototype.copyWithin()
+--> dùng cho instance method. bao giờ cũng có .prototype
+
