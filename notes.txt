@@ -208,3 +208,24 @@ VD:
 - Array.prototype.copyWithin()
 --> dùng cho instance method. bao giờ cũng có .prototype
 
+-----------------------------------------------------------
+Task17: Rest
+- rest: phần còn lại, phần còn thừa.
+- rest là tính năng mới của ES6
+
+- rest luon luon đc đặt ở cuối, sau cùng của các param trong khai báo funtion.
+- rest sẽ return về  1  array.
+- VD:  function run(a, ...number) {...}
+
+- ...rest: sẽ lấy những đối số thừa trên param --> return 1 array
+- arguments: --> return all đối số được truyền vào. --> dưới dạng array-like object.
+
+--- Nếu dùng ...rest thì sẽ return về luôn 1 array bao gốm các tham số
+--> bỏ đi được bước Array.from(arguments) để convert từ array-like object into array.
+
+- split: tách ra
+- concat: nối 2 or nhiều array vs lại vs nhau.
+- join: tham gia --> nhận 1 array return về 1 string, ở giữa các ptu sau khi nối có ký tự mình muốn gán.
+
+---> rest đc dùng trong trường hợp k biết số lượng đối số truyền vào (tham số đầu vào) là bao nhiêu.
+
