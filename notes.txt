@@ -229,3 +229,10 @@ Task17: Rest
 
 ---> rest đc dùng trong trường hợp k biết số lượng đối số truyền vào (tham số đầu vào) là bao nhiêu.
 
+-----------------------------------------------------------
+Task18: Spread
+- spread: trải ra --> trải các phan tu của array ra.
+- rest: gom vào --> gom các ptu lại thành 1 array. 
+- toán tử spread  giống rest ở    ...param
+
+
