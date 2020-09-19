@@ -101,19 +101,19 @@ let obj = {
 - Xử lý khi nhận n đối số  đầu vào --> using arguments --> convert into array --> using reduce || map.
 
 -----------------------------------------------------------
-Task8: Default parameters 
+Task8: Default parameters
 
-- const có 1 cái dở hơi đó là khi khai báo object (cả array cũng vậy) thì nó vấn bị change bình thường. 
+- const có 1 cái dở hơi đó là khi khai báo object (cả array cũng vậy) thì nó vấn bị change bình thường.
 Chỉ khi khai báo các kiểu như: string, number, boolean thì mới k bị change.
 
 - Default parameters: tham số mặc định của 1 function.
 
 -----------------------------------------------------------
 Task8: Call
-- bind(object) 
+- bind(object)
       --> return 1 function và phải gọi function ấy bằng cách thêm ()
-- call(object, argument1, argument2, ...) 
-- call(this, argument1, argument2, ...) 
+- call(object, argument1, argument2, ...)
+- call(this, argument1, argument2, ...)
       --> gọi function đấy và (return value) mà (function return).
 - apply(object, [argument1, argument2, ...])
 - apply(this, [argument1, argument2, ...])
@@ -201,7 +201,7 @@ Task16: Static
 --> mà có thể sử dụng function đó luôn mà k cần phải tạo object.
 
 VD:
-- Array.from(): 
+- Array.from():
 --> method bình thường.
 
 - Array.prototype.concat()
@@ -232,7 +232,11 @@ Task17: Rest
 -----------------------------------------------------------
 Task18: Spread
 - spread: trải ra --> trải các phan tu của array ra.
-- rest: gom vào --> gom các ptu lại thành 1 array. 
+- rest: gom vào --> gom các ptu lại thành 1 array.
 - toán tử spread  giống rest ở    ...param
 
-
+-----------------------------------------------------------
+Task19: Value types && Reference types
+- value types: string, number, boolean, null, undefined, symbok, ...
+- reference types: object, array, function.
+- reference: tham chiếu.
