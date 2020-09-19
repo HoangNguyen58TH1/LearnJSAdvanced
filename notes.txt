@@ -240,3 +240,11 @@ Task19: Value types && Reference types
 - value types: string, number, boolean, null, undefined, symbok, ...
 - reference types: object, array, function.
 - reference: tham chiếu.
+
+-----------------------------------------------------------
+Task20: Spread part2
+- clone object
+
+- Shallow cloning
+- deep clone
+- spread object
