@@ -238,13 +238,43 @@ Task18: Spread
 -----------------------------------------------------------
 Task19: Value types && Reference types
 - value types: string, number, boolean, null, undefined, symbok, ...
+--> so sánh giá trị của biến
 - reference types: object, array, function.
+--> so sánh vị trí được lưu trong bộ nhớ (memory) của máy.
 - reference: tham chiếu.
+
 
 -----------------------------------------------------------
 Task20: Spread part2
-- clone object
+- recursive: đệ quy
+- target: mục tiêu
+- spread syntax --> copy array, object.
+- spread: tách ra, trải ra.
+--> chức năng: 
+      + copy array, object.
+      + tách string, array ra các phần tử.
 
-- Shallow cloning
-- deep clone
-- spread object
+- Shallow cloning --> chỉ clone "1" level của object đó thôi.
+- deep clone      --> clone "all" level của object đó luôn.
+      + let obj2 = JSON.parse(JSON.stringify(obj1));
+      + sử dụng đc cho cả object lẫn array.
+- spread --> shallow clone 1 object
+
+- Trước đây ngta dùng Object.assign() || for...in{} để copy object nhưng kể từ ES-2018 thì dùng spread. --> [...]
+--> vì nó ngắn gọn hơn.
+
+                  -------------------------
+-- Nói túm lại:
+- Shallow cloning: chỉ copy được 1 level của object, array đó thôi
+--> using:
+      + spread
+      + Object.assign()
+      + For...incognito
+      + Đối vs array --> maybe using reduce, map, filter, slice, ....
+- Deep cloning: copy đươc all level of object, array.
+--> using:
+      + let objectCopy = JSON.parse(JSON.stringify(objectInitial));
+                  -------------------------
+
+
+
