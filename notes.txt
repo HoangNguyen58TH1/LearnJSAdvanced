@@ -293,3 +293,12 @@ Task21: Closure
 - execute: thực hiện, hoàn thành, chạy chương trình.
 
 - function factory: là 1 function không phải là 1 class, không là phải là 1 constructor function, nó return về 1 object mà không sử dụng từ khóa "new". (function factory ==> design patterns)
+
+-----------------------------------------------------------
+Task22: Higher Order Functions
+- Higher Order Functions là 1 function bình thường có khả năng nhận (param - callback) hoặc return (giá trị trả về) về 1 function.
+- VD: map, reduce,... cũng được gọi là Higher-Order Function.
+
+- Ứng dụng của Higher-order Functions:
++ Chia nhỏ chương trình --> Chia nhỏ thành nhiều function, logic --> dể debug
++ Khi các function nhỏ chạy thì nó sẽ kết thúc function --> giải phóng bộ nhớ --> tiết kiệm bộ nhớ --> chương trình đc tối ưu.
