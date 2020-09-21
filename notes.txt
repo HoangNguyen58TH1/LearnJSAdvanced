@@ -6,7 +6,7 @@ Task1: Hoisting
 Task2: Let, Const
 
 1. Declaration (khai báo)
-A. Khai báo:
+A. Khai báo lại:
 - var thì được khai báo lại
 - let, const thì không được khai báo lại.
 B. Khai báo mà k gán giá trị:
@@ -276,5 +276,20 @@ Task20: Spread part2
       + let objectCopy = JSON.parse(JSON.stringify(objectInitial));
                   -------------------------
 
+-----------------------------------------------------------
+Task21: Closure
+- garbage collector: người thu gom gác.
+- closure: khép kín, đóng kín, sự kết thúc.
+- khi 1 function chạy xong --> return 1 result or undefined --> các biến trong function sẽ bị xóa khỏi bộ nhớ (memory).
+- Trong JS có 1 cái hay là: trong 1 function có thể  return lại 1 function.
 
+- inner function (hàm khai báo bên trong một hàm khác).
+- outer function (hàm chứa inner function) - scope chain.
+- Closure có 3 scope chain, nó có thể: truy cập tới các biến khai báo bên trong nó, truy cập tới các biến của outer function, và truy cập tới các biến global.
+- Closures không chỉ truy cập được tới các biến, mà còn có thể truy cập các tham số của outer function.
+- Chú ý, closures không thể truy cập đối tượng arguments của outer function.
 
+- Closure là một hàm được viết lồng vào bên trong một hàm khác (hàm cha) nó có thể sử dụng biến toàn cục, biến cục bộ của hàm cha và biến cục bộ của chính nó (lexical scoping).
+- execute: thực hiện, hoàn thành, chạy chương trình.
+
+- function factory: là 1 function không phải là 1 class, không là phải là 1 constructor function, nó return về 1 object mà không sử dụng từ khóa "new". (function factory ==> design patterns)
