@@ -302,3 +302,8 @@ Task22: Higher Order Functions
 - Ứng dụng của Higher-order Functions:
 + Chia nhỏ chương trình --> Chia nhỏ thành nhiều function, logic --> dể debug
 + Khi các function nhỏ chạy thì nó sẽ kết thúc function --> giải phóng bộ nhớ --> tiết kiệm bộ nhớ --> chương trình đc tối ưu.
+
+-----------------------------------------------------------
+Task23: Destructuring
+- Structuring: cấu trúc
+- Destructuring: Phá hủy, Gỡ bỏ cấu trúc này ra.
