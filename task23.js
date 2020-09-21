@@ -1,5 +1,5 @@
 //Destructuring.
-//Array - 4
+//Array - 4git 
 // const arr = [1, 2, 3, 4, 5];
 // 1.
 const [a, b, c, d, e] = arr;
@@ -7,7 +7,7 @@ const [a, b, c, d, e] = arr;
 const [f, , , g] = arr;
 // 3.
 const [h, ...i] = arr;
-const [j, k = 100] = arr; ---- not work.
+const [j, k = 100] = arr; //---- not work.
 console.log(a, b, c, d, e);
 console.log(f, g);
 console.log(h, i);
