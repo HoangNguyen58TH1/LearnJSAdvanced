@@ -1,0 +1,167 @@
+// 22/09/2020
+//Basic--------------------------------------------------------
+//
+- Ngta thường using async nhiều hơn sync bởi vì async chạy bất đồng bộ
+    --> những thằng sau k phải chờ nó run xong mới run.
+    --> giúp tiết kiệm time hơn.
+
+//
+--> De handling callback hell --> ngta using "Promise".
+
+
+//
+- Promise la 1 constructor function
+- 1 Promise co 3 trang thai:
++ Pending (đang xử lý)
++ Fulfilled (đã hoàn thành)
++ Rejected (đã bị từ chối)
+
+//
+Promise --> node co --> async await
+- async await --> return 1 Promise
+
+//
+setTimeout(fn, time)
+- clearTimeout(timeoutId);
+
+//
+setInterval
+
+//
+Scope (global vs local)
+- Hiểu được nó thì sẽ --> Tránh những lồi logic khó hiểu mà k biết nó sai ở đâu.
+
+//Advanced--------------------------------------------------------
+//
+ Hoisting
+- Để  tránh hoisting thì ngta khai báo variable ở đầu function hoặc đầu chương trình.
+
+//
+*** Túm lại: let và const được tạo ra để thay thể var. Nhằm khắc phục:
+- khai báo lại
+- hoisting
+- block scope --> tiết kiệm bộ nhớ, tối ưu hóa chương trình.
+
+//
+- global context: ngữ cảnh toàn cục
+- function context: ngữ cảnh của cái function đó
+
+//
+- arrow function thì không có context.
+- function bình thường(không theo kiểu ES6) thì có context.
+- Như vậy là có 3 cách để  dùng lại biến this cho 1 function bên trong 1 function cha.
++ .bind(object)
++ that = this
++ dùng arrow function expression
+
+//
+Template String
+- `${ trong này viết được các biểu thức JS }`
+- Ngoài ra dùng cách template string thì có thể  xuống dòng được.
+- Chèn 1 lần nhiều biểu thức được.
+
+//
+- tham số mặc định = giá trị đối số mặc định.
+- biến arguments nằm trong all function (ngoài trừ arrow function)
+- argunments là 1 object có dang array-like object.
+- array-like object không có các method của array.
+--> tức là phải có các key như index của array và có property length ở cuối.
+- arguments là 1 biến tồn tại bên trong scope của 1 cái function(k phải =>), nó tồn tại dưới dạng array-like object.
+- arguments tuy k được khai báo nhưng luôn tồn tại trong scope của 1 function.
+- Xử lý khi nhận n đối số  đầu vào --> using arguments --> convert into array --> using reduce || map.
+
+//
+- const có 1 cái dở hơi đó là khi khai báo object (cả array cũng vậy) thì nó vấn bị change bình thường.
+Chỉ khi khai báo các kiểu như: string, number, boolean thì mới k bị change.
+
+//
+- bind(object)
+
+- call(object, argument1, argument2, ...)
+- call(this, argument1, argument2, ...)
+
+- apply(object, [argument1, argument2, ...])
+- apply(this, [argument1, argument2, ...])
+
+//
+//Enhanced object literals
+// tức là có cặp key-value giống nhau thì mình chỉ cần viết value thôi.
+- materials: nguyên vật liệu
+
+//
+Class
+- Trước khi có class thì trong JS ngta sử dụng OOP bằng constructor function vs prototype
+- constructor function (ghàm khởi tạo) đc đặt tên theo PascalCase
+--> Cú pháp Class được sinh ra để  viết Constructor function ngắn gọn hơn.
+--> Giống lagnuage OOP hơn.
+
+//
+- khi dùng class để kế thừa thì log objetc đó ra thì nó sẽ thuộc class hiện tại
+- Còn đối vs function constructor thì log object ra thì nó sẽ thuộc về  object đầu tiên.
+
+//
+- super (đc gọi trong subclass) đại diện cho constructor function của baseclass.
+- super là đại diện cho thằng baseclass của class gọi nó.
+
+- trong java hiện tượng overriding chỉ xảy ra khi 2 method trung tên + số lượng param truyền vào
+- trong js thì hiện tượng overriding xảy ra khi 2 method cùng tên.
+
+- notes: super != overriding
++ super được dùng khi mình muốn giữ lại những cái của baseclass và thêm mới cái gì đó.
++ overriding được dùng khi mình muốn subclass overriding thằng baseclass luôn.
+
+//
+Static
+- static method ko được gọi từ instance của class đó mà nó chỉ được gọi từ chính class.
+- ngược lại method bình thường thì chỉ đc gọi từ các instance mà k gọi đc từ chính class đó.
+
+--- static method được sử dụng khi nào ?
+--> khi không đòi hỏi phải tạo 1 object mới để có thể sử dụng được function đấy.
+--> mà có thể sử dụng function đó luôn mà k cần phải tạo object.
+
+//
+- rest: phần còn lại, phần còn thừa. (rest là tính năng mới của ES6)
+- rest sẽ return về  1  array.
+
+- diference between ...rest != arguments
+- ...rest: sẽ lấy những đối số thừa trên param --> return 1 array
+- arguments: --> return all đối số được truyền vào. --> dưới dạng array-like object.
+
+---> rest đc dùng trong trường hợp k biết số lượng đối số truyền vào (tham số đầu vào) là bao nhiêu.
+
+//
+- spread: trải ra --> trải các phan tu của array ra.
+- rest: gom vào --> gom các ptu lại thành 1 array.
+
+//
+Value types && Reference types
+
+//
+Spread --> copy array, object.
+                  -------------------------
+-- Nói túm lại:
+- Shallow cloning: chỉ copy được 1 level của object, array đó thôi
+--> using:
+      + spread
+      + Object.assign()
+      + For...incognito
+      + Đối vs array --> maybe using reduce, map, filter, slice, ....
+- Deep cloning: copy đươc all level of object, array.
+--> using:
+      + let objectCopy = JSON.parse(JSON.stringify(objectInitial));
+                  -------------------------
+
+//
+- Closure là một hàm được viết lồng vào bên trong một hàm khác (hàm cha) nó có thể sử dụng biến toàn cục, biến cục bộ của hàm cha và biến cục bộ của chính nó (lexical scoping).
+
+- Closures không chỉ truy cập được tới các biến, mà còn có thể truy cập các tham số của outer function.
+- Chú ý, closures không thể truy cập đối tượng arguments của outer function.
+
+//
+- Higher Order Functions là 1 function bình thường có khả năng nhận (param - callback) hoặc return (giá trị trả về) về 1 function.
+
+- VD: map, reduce,... cũng được gọi là Higher-Order Function.
+
+- Ứng dụng của Higher-order Functions:
++ Chia nhỏ chương trình --> Chia nhỏ thành nhiều function, logic --> dể debug
++ Khi các function nhỏ chạy thì nó sẽ kết thúc function --> giải phóng bộ nhớ --> tiết kiệm bộ nhớ --> chương trình đc tối ưu.

@@ -54,7 +54,7 @@ Task4: Arrow function expression - Fat arrow
 -----------------------------------------------------------
 Task5: Arrow function expression - part2
 - arrow function thì không có context.
-- function bình thường, không theo kiểu ES6 thì có context.
+- function bình thường(không theo kiểu ES6) thì có context.
 
 - Nếu không viết JS theo kiểu ES6 trở lên thì phải bind(object) nó mới nhận context
 - Còn viết theo kiểu ES6 thì arrow function k có context.
@@ -79,7 +79,7 @@ Task6: Template String
 
 -----------------------------------------------------------
 Task7: Arguments
-- tham số
+- tham số: param
 - đối số
 - tham số mặc định = giá trị đối số mặc định.
 
@@ -95,7 +95,7 @@ let obj = {
 }
 --> tức là phải có các key như index của array và có property length ở cuối.
 
-- arguments là 1 biến tồn tại bên trong scope của 1 cái function(k phải =>) dưới dạng array-like object.
+- arguments là 1 biến tồn tại bên trong scope của 1 cái function(k phải =>), nó tồn tại dưới dạng array-like object.
 - arguments tuy k được khai báo nhưng luôn tồn tại trong scope của 1 function.
 
 - Xử lý khi nhận n đối số  đầu vào --> using arguments --> convert into array --> using reduce || map.
@@ -121,6 +121,8 @@ Task8: Call
 
 -----------------------------------------------------------
 Task11: Enhanced object literals
+//Enhanced object literals
+// tức là có cặp key-value giống nhau thì mình chỉ cần viết value thôi.
 - enhanced: nâng cao
 - literal: theo nghĩa đen.
 - object literals: object được khai báo theo kiểu viết tay. --> {}
@@ -158,7 +160,7 @@ Task13: Class Inheritance - Kế  thừa trong class - OOP
 Task14: Method overriding
 
 -----------------------------------------------------------
-Task15: Supper
+Task15: Super
 - increment: tăng
 - decrement: giảm
 - enemy: kẻ thù
@@ -237,12 +239,11 @@ Task18: Spread
 
 -----------------------------------------------------------
 Task19: Value types && Reference types
-- value types: string, number, boolean, null, undefined, symbok, ...
+- value types: string, number, boolean, null, undefined, symbol, ...
 --> so sánh giá trị của biến
 - reference types: object, array, function.
 --> so sánh vị trí được lưu trong bộ nhớ (memory) của máy.
 - reference: tham chiếu.
-
 
 -----------------------------------------------------------
 Task20: Spread part2
@@ -307,3 +308,28 @@ Task22: Higher Order Functions
 Task23: Destructuring
 - Structuring: cấu trúc
 - Destructuring: Phá hủy, Gỡ bỏ cấu trúc này ra.
+- Tạo các biến rồi gán value cho các biến đó từ array || object.
+-----------------------------------------------------------
+
+
+- Ctrl + W = Ctrl + <--
+- history
+- Ctrl + R : search command in history
+
+- pwd: print work directory
+- touch nameFile.txt
+- mkdir nameFolder
+- specified: chỉ định, xác định.
+- whoami
+- top
+
+- Trello.com 
+
+
+
+- Read document JS Basic                  OK
+- Read document JS Advanced               OK
+- Work task for test Knowledged JS.       not OK
+
+- tradeoff: đánh đổi.
+- 
