@@ -1,0 +1,309 @@
+11/09/2020
+Task1: Hoisting
+- Để  tránh hoisting thì ngta khai báo variable ở đầu function hoặc đầu chương trình.
+
+-----------------------------------------------------------
+Task2: Let, Const
+
+1. Declaration (khai báo)
+A. Khai báo lại:
+- var thì được khai báo lại
+- let, const thì không được khai báo lại.
+B. Khai báo mà k gán giá trị:
+- var, let có thể khai báo mà không gán gia trị chi nó --> undefined
+- const thì không thể khai báo mà k gán giá trị được.
+
+2. Hoisting
+- var thì có hoisting còn let, const thì không.
+
+3. Block scope
+- let, const thì nó có block scope
+- var thì k có block scope, mà chỉ có function scope thôi. --> var k tuân thủ block scope.
+- block scope là gì: là khi mình khao báo vs: {}
++ VD: if{...}
+      for{...}
+      function{...}
+      Thậm chí là khai báo như vậy luôn vẫn đc coi là 1 block scope: {...} --> k có if hay for gì. --> nhưng mà thực ra nó k đc dùng bao giờ cả.
+      Ngoại trừ khai báo object. {}
+- Như vậy thì function scope nó sẽ thuộc váo block scope.
+
+- Thông thường khi lập trình thì ngta càng muốn giới hạn cái scope của variable càng nhỏ càng tốt. --> Vì như vậy:
++ Dể quản lý scope của biến
++ Scope càng bé thì càng ít tốn bộ nhớ khi chạy chương trình.
+--> Mục đích là để tối ưu chương trình của mình.
+
+*** Túm lại: let và const được tạo ra để thay thể var. Nhằm khắc phục:
+- khai báo lại
+- hoisting
+- block scope --> tiết kiệm bộ nhớ, tối ưu hóa chương trình.
+
+-----------------------------------------------------------
+Task3: Function context & bind
+- global context: ngữ cảnh toàn cục
+- function context: ngữ cảnh của cái function đó
+- bind: methods bind dùng để trói buộc function đó vào 1 cái context gì đó.
+
+-----------------------------------------------------------
+Task4: Arrow function expression - Fat arrow
+=> ->
+- expression: biểu hiện, sự diễn tả.
+
+- Nếu chỉ có 1 param thì không cần ().
+- còn nếu không có hoặc từ 2 param trở lên thì phải có dấu ngoặc () mới đúng cú pháp.
+
+-----------------------------------------------------------
+Task5: Arrow function expression - part2
+- arrow function thì không có context.
+- function bình thường, không theo kiểu ES6 thì có context.
+
+- Nếu không viết JS theo kiểu ES6 trở lên thì phải bind(object) nó mới nhận context
+- Còn viết theo kiểu ES6 thì arrow function k có context.
+
+- Như vậy là có 3 cách để  dùng lại biến this cho 1 function bên trong 1 function cha.
++ .bind(object)
++ that = this
++ dùng arrow function expression
+
+--- Sư khác biệt giữa arrow function vs function thường ???
+
+
+-----------------------------------------------------------
+Task6: Template String
+- `${ trong này viết được các biểu thức JS }`
+- Biểu thức JS:
++ tên biến
++ các phép tính cộng trừ nhân chia
++ gọi function
+- Ngoài ra dùng cách template string thì có thể  xuống dòng được.
+- Chèn 1 lần nhiều biểu thức được.
+
+-----------------------------------------------------------
+Task7: Arguments
+- tham số
+- đối số
+- tham số mặc định = giá trị đối số mặc định.
+
+- biến arguments nằm trong all function (ngoài trừ arrow function)
+- argunments là 1 object có dang array-like object.
+- array-like object không có các method của array.
+- 1 array-like object là:
+let obj = {
+      1: 'Hoang',
+      2: 'Nguyen',
+      3: 'Van',
+      length: 3
+}
+--> tức là phải có các key như index của array và có property length ở cuối.
+
+- arguments là 1 biến tồn tại bên trong scope của 1 cái function(k phải =>) dưới dạng array-like object.
+- arguments tuy k được khai báo nhưng luôn tồn tại trong scope của 1 function.
+
+- Xử lý khi nhận n đối số  đầu vào --> using arguments --> convert into array --> using reduce || map.
+
+-----------------------------------------------------------
+Task8: Default parameters
+
+- const có 1 cái dở hơi đó là khi khai báo object (cả array cũng vậy) thì nó vấn bị change bình thường.
+Chỉ khi khai báo các kiểu như: string, number, boolean thì mới k bị change.
+
+- Default parameters: tham số mặc định của 1 function.
+
+-----------------------------------------------------------
+Task8: Call
+- bind(object)
+      --> return 1 function và phải gọi function ấy bằng cách thêm ()
+- call(object, argument1, argument2, ...)
+- call(this, argument1, argument2, ...)
+      --> gọi function đấy và (return value) mà (function return).
+- apply(object, [argument1, argument2, ...])
+- apply(this, [argument1, argument2, ...])
+      --> nhận vào a array || array-like object.
+
+-----------------------------------------------------------
+Task11: Enhanced object literals
+- enhanced: nâng cao
+- literal: theo nghĩa đen.
+- object literals: object được khai báo theo kiểu viết tay. --> {}
+
+- materials: nguyên vật liệu
+
+- hàm ẩn danh (closure).
+
+-----------------------------------------------------------
+Task12: Class
+- Trước khi có class thì trong JS ngta sử dụng OOP bằng constructor function vs prototype
+- constructor: khởi tạo
+- constructor function: hàm khởi tạo
+
+- snake: hoang_nguyen
+- camelCase: hoangNguyen
+- PascalCase: HoangNguyen
+
+- window cho browsers và global cho nodeJS.
+
+- Java là language thuần OOP
+- JS không phải là language lập trình HĐT từ ban đầu (k phải language OOP từ đầu)
+--> Cú pháp Class được sinh ra để  viết Constructor function ngắn gọn hơn.
+--> Giống lagnuage OOP hơn.
+
+-----------------------------------------------------------
+Task13: Class Inheritance - Kế  thừa trong class - OOP
+- Kế thừa: là 1 đặc điểm trong OOP (lập trình HĐT)
+- parrot: con vẹt
+
+- khi dùng class để kế thừa thì log objetc đó ra thì nó sẽ thuộc class hiện tại
+- Còn đối vs function constructor thì log object ra thì nó sẽ thuộc về  object đầu tiên.
+
+-----------------------------------------------------------
+Task14: Method overriding
+
+-----------------------------------------------------------
+Task15: Supper
+- increment: tăng
+- decrement: giảm
+- enemy: kẻ thù
+- incognito: ẩn danh
+
+- ranged attack: tấn công tầm xa.
+- ranged: dọc theo, chạy dài, tầm xa, ...
+
+- subclass: class con
+- baseclass: class cha.
+- super (đc gọi trong subclass) đại diện cho constructor function của baseclass.
+- super là đại diện cho thằng baseclass của class gọi nó.
+
+- trong java hiện tượng overriding chỉ xảy ra khi 2 method trung tên + số lượng param truyền vào
+- trong js thì hiện tượng overriding xảy ra khi 2 method cùng tên.
+
+- notes:
++ super được dùng khi mình muốn giữ lại những cái của baseclass và thêm mới cái gì đó.
++ overriding được dùng khi mình muốn subclass overriding thằng baseclass luôn.
+
+- cú pháp:
+super([arguments]); // gọi hàm khởi tạo cha.
+super.functionOnParent([arguments]);
+
+- polygon: đa giác
+- square: ô vuông
+
+-----------------------------------------------------------
+Task16: Static
+- using "static" create static method.
+- dùng từ khóa "static" để tạo ra các static method.
+
+- static method ko được gọi từ instance của class đó mà nó chỉ được gọi từ chính class.
+- ngược lại method bình thường thì chỉ đc gọi từ các instance mà k gọi đc từ chính class đó.
+
+- cũng có thể dùng "static" để tạo các biến static chỉ đc truy cập từ class thôi.
+
+--- static method được sử dụng khi nào ?
+--> khi không đòi hỏi phải tạo 1 object mới để có thể sử dụng được function đấy.
+--> mà có thể sử dụng function đó luôn mà k cần phải tạo object.
+
+VD:
+- Array.from():
+--> method bình thường.
+
+- Array.prototype.concat()
+- Array.prototype.copyWithin()
+--> dùng cho instance method. bao giờ cũng có .prototype
+
+-----------------------------------------------------------
+Task17: Rest
+- rest: phần còn lại, phần còn thừa.
+- rest là tính năng mới của ES6
+
+- rest luon luon đc đặt ở cuối, sau cùng của các param trong khai báo funtion.
+- rest sẽ return về  1  array.
+- VD:  function run(a, ...number) {...}
+
+- ...rest: sẽ lấy những đối số thừa trên param --> return 1 array
+- arguments: --> return all đối số được truyền vào. --> dưới dạng array-like object.
+
+--- Nếu dùng ...rest thì sẽ return về luôn 1 array bao gốm các tham số
+--> bỏ đi được bước Array.from(arguments) để convert từ array-like object into array.
+
+- split: tách ra
+- concat: nối 2 or nhiều array vs lại vs nhau.
+- join: tham gia --> nhận 1 array return về 1 string, ở giữa các ptu sau khi nối có ký tự mình muốn gán.
+
+---> rest đc dùng trong trường hợp k biết số lượng đối số truyền vào (tham số đầu vào) là bao nhiêu.
+
+-----------------------------------------------------------
+Task18: Spread
+- spread: trải ra --> trải các phan tu của array ra.
+- rest: gom vào --> gom các ptu lại thành 1 array.
+- toán tử spread  giống rest ở    ...param
+
+-----------------------------------------------------------
+Task19: Value types && Reference types
+- value types: string, number, boolean, null, undefined, symbok, ...
+--> so sánh giá trị của biến
+- reference types: object, array, function.
+--> so sánh vị trí được lưu trong bộ nhớ (memory) của máy.
+- reference: tham chiếu.
+
+
+-----------------------------------------------------------
+Task20: Spread part2
+- recursive: đệ quy
+- target: mục tiêu
+- spread syntax --> copy array, object.
+- spread: tách ra, trải ra.
+--> chức năng: 
+      + copy array, object.
+      + tách string, array ra các phần tử.
+
+- Shallow cloning --> chỉ clone "1" level của object đó thôi.
+- deep clone      --> clone "all" level của object đó luôn.
+      + let obj2 = JSON.parse(JSON.stringify(obj1));
+      + sử dụng đc cho cả object lẫn array.
+- spread --> shallow clone 1 object
+
+- Trước đây ngta dùng Object.assign() || for...in{} để copy object nhưng kể từ ES-2018 thì dùng spread. --> [...]
+--> vì nó ngắn gọn hơn.
+
+                  -------------------------
+-- Nói túm lại:
+- Shallow cloning: chỉ copy được 1 level của object, array đó thôi
+--> using:
+      + spread
+      + Object.assign()
+      + For...incognito
+      + Đối vs array --> maybe using reduce, map, filter, slice, ....
+- Deep cloning: copy đươc all level of object, array.
+--> using:
+      + let objectCopy = JSON.parse(JSON.stringify(objectInitial));
+                  -------------------------
+
+-----------------------------------------------------------
+Task21: Closure
+- garbage collector: người thu gom gác.
+- closure: khép kín, đóng kín, sự kết thúc.
+- khi 1 function chạy xong --> return 1 result or undefined --> các biến trong function sẽ bị xóa khỏi bộ nhớ (memory).
+- Trong JS có 1 cái hay là: trong 1 function có thể  return lại 1 function.
+
+- inner function (hàm khai báo bên trong một hàm khác).
+- outer function (hàm chứa inner function) - scope chain.
+- Closure có 3 scope chain, nó có thể: truy cập tới các biến khai báo bên trong nó, truy cập tới các biến của outer function, và truy cập tới các biến global.
+- Closures không chỉ truy cập được tới các biến, mà còn có thể truy cập các tham số của outer function.
+- Chú ý, closures không thể truy cập đối tượng arguments của outer function.
+
+- Closure là một hàm được viết lồng vào bên trong một hàm khác (hàm cha) nó có thể sử dụng biến toàn cục, biến cục bộ của hàm cha và biến cục bộ của chính nó (lexical scoping).
+- execute: thực hiện, hoàn thành, chạy chương trình.
+
+- function factory: là 1 function không phải là 1 class, không là phải là 1 constructor function, nó return về 1 object mà không sử dụng từ khóa "new". (function factory ==> design patterns)
+
+-----------------------------------------------------------
+Task22: Higher Order Functions
+- Higher Order Functions là 1 function bình thường có khả năng nhận (param - callback) hoặc return (giá trị trả về) về 1 function.
+- VD: map, reduce,... cũng được gọi là Higher-Order Function.
+
+- Ứng dụng của Higher-order Functions:
++ Chia nhỏ chương trình --> Chia nhỏ thành nhiều function, logic --> dể debug
++ Khi các function nhỏ chạy thì nó sẽ kết thúc function --> giải phóng bộ nhớ --> tiết kiệm bộ nhớ --> chương trình đc tối ưu.
+
+-----------------------------------------------------------
+Task23: Destructuring
+- Structuring: cấu trúc
+- Destructuring: Phá hủy, Gỡ bỏ cấu trúc này ra.
